@@ -11,12 +11,11 @@
  var item7= {name:'Chocolate Milkshake', cost:4, ordered:0};
 
  function addToBag () {
-    document.addEventListener('click', addToBag);
-    
-if  (addToBag == item1) {
+    // document.addEventListener('click', addToBag);
+    document.addEventListener('click', item1)
 }  
-console.log(item1);  
-}
+console.log(addToBag);  
+// }
 // OMG...^^^this is finally logging the selection...only days to go before it finally works! 
 
 // ******Ignore all below here...
