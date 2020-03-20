@@ -6,9 +6,20 @@
     box-shadow: 2px 2px palevioletred;
     margin: 10px;
 }
+/* #addItem:hover{
+    background-color: blueviolet;
+} */
 #btn-1 {
  width: 100px;
+ height: 30px;
  border: 2px solid black;
  border-radius: 20%;
  margin: 10px;
+}
+#btn-1:hover {
+    transform: scale(2.0);
+    background-color: crimson;
+}
+#photoAll {
+    float: left;
 }
