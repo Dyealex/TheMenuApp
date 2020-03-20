@@ -1,0 +1,14 @@
+#addItem {
+    width: 250px;
+    height: 75px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px palevioletred;
+    margin: 10px;
+}
+#btn-1 {
+ width: 100px;
+ border: 2px solid black;
+ border-radius: 20%;
+ margin: 10px;
+}

@@ -22,10 +22,13 @@
 // let item1 ={name:'Big Salad', cost: 10, ordered:0}; //<-object
 function handleClick(element) {
     // alert("You rang?")
-element.innerHTML="Checked"
+element.innerHTML="Added to Cart"
 }
-
-
+function item1Add () {
+    alert("You rang?")
+    document.getElementById('item1Add').innerHTML= "The BIG Salad" + " $10"
+}
+// ^^^f**king FINALLY got something in the cart....
 // let myDiv = document.getElementById("myDiv");
 // let myP = document.getElementById("myP");
 // let myP2 = document.getElementById("myP2");
