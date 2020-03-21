@@ -16,19 +16,23 @@ let item4 ={name:'Cheeseburger Combo', cost:9, ordered:0};
 // element.innerHTML="Added to Cart"//changes text in 
 // }
 function item1Add () {
-    alert("Add to your bag?")//changes the text in the alert
+    // alert("Add to your bag?")//changes the text in the alert
     document.getElementById('item1Add').innerHTML= "The BIG Salad" + " $10"
 }
 function item2Add () {
-    alert("Add to your bag?")//changes the text in the alert
-    document.getElementById('item2Add').innerHTML= "The Small Salad" + " $9"
+    
+    document.getElementById('item2Add').innerHTML= "The Small Salad" + " $9";
+    // if ("item2Add") {
+    //     addEventListener('click', window.alert("Add this item to your bag?"))//changes the text in the alert
+    // }
 }
+// window.alert("Add item to your bag?")//changes the text in the alert
 function item3Add () {
-    alert("Add to your bag?")//changes the text in the alert
+    // alert("Add to your bag?")//changes the text in the alert
     document.getElementById('item3Add').innerHTML= "The Cheeseburger Combo" + " $9"
 }
 function item4Add () {
-    alert("Add to your bag?")//changes the text in the alert
+    // alert("Add to your bag?")//changes the text in the alert
     document.getElementById('item4Add').innerHTML= "The Hamburger Combo" + " $8"
 }
 // console.log(item1Add)
