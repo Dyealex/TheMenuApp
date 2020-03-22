@@ -6,30 +6,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu App</title>
-</head>
-<script src="tryingsomethingelse.js"></script>
-<body>
-    <form method="dialog">
-        <form id="menuList">
-            <div id = "item1-div">
-                <b>The <i>BIG</i> Salad</b><br><span>Price: $10</span><br>
-                <p id = "item1">Our BIG salad is a truly big salad with a little price. A huge bed of baby spinach, cherry tomatoes, shredded cheese, diced ham, fried onions, egg crumbles....whatever else we can dig up. These salads are made up weeks in advance so <b>NO special requests!</b></p>
-                <img src="saladphoto.jpg" id = "photosAll" alt="salad"><h5>Just so you know, your salad will look nothing like this!</h5>
-        <br>
-            <input type = "button" id = "btn-1" onclick = "item1Add()" value="Add to your bag?" class="btn">  
-       
-          <!-- <select name="item1Add" onchange="update_prices(this);" class="form-select" id="item1" ><option value="0" selected="selected">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
-            <div class="item1Total"><div class="form-item" id="entry-total-wrapper">
-                <input type="text" maxlength="128" name="entry_ss3_total" id="entry-total" size="60" value="$ 10.00" disabled="disabled" class="form-text" /> -->
-            </button>   
-            </div>
 
-    </form>
+
+<link rel="stylesheet" href="tryingsomethingelse.css">
+</head>
+
+<body>
+
+    <script src="tryingsomethingelse.js"></script>
+
+<!-- product section -->
+<section class="products">
+  <!-- ^^^parent element??? -->
+  <div class="section-title">
+    <!-- 1st child???? -->
+    <h2>Our Menu</h2>
+    <div id = "item1-div">
+      <!-- child of child???? -->
+      <b>The <i>BIG</i> Salad</b><br><span>Price: $10</span><br>
+      <p id = "item1">Our BIG salad is a truly big salad with a little price. A huge bed of baby spinach, cherry tomatoes, shredded cheese, diced ham, fried onions, egg crumbles....whatever else we can dig up. These salads are made up weeks in advance so <b>NO special requests!</b></p>
+      <img src="saladphoto.jpg" id = "photosAll" alt="salad"><h5>Just so you know, your salad will look nothing like this!</h5>
+<br>
+  </div>
+  </div>
+  <div class="products-center">
+<!-- first product -->
+<article class="product">
+  <div class="image-container">
+<img src="brownbag.jpg" alt="product" class="product-image">
+<button class="bag-btn" data-id="1">
+  <i class="fas fa-shopping-cart"></i>
+  add to bag
+</button>
+<h3>Menu Item One</h3>
+<h4>$10</h4>
+  </div>
+  </div>
+</article>
+</section>
+<!-- end of product -->
+<!-- cart -->
+<div class="cart-overlay">
+  <div class="cart">
+    <span class="close-cart">
+    <i class="fas fa-window-close"></i>
+  </span>
+  <h3>your cart</h3>
+  <div class="cart-content">
+    <!-- cart items -->
+    <div class="cart-items"><img src="saladphoto.jpg" alt="">
+    <div>
+      <h4>big salad</h4>
+      <h5>$10</h5>
+      <span class="remove-item">Remove?</span>
+    </div>
+     <div>
+      <!-- <i class="fas fa-chevron-up"></i> -->
+      <!-- <i class="fas fa-chevron-down"></i> -->
+       <!--^^^this does not work^^^^--->
+      <p class="item-amount"></p>
+    </div> 
+  </div>
+    <!-- cart item -->
+  </div>
+  </div>
+</div>
+<!-- end of cart -->
+<div class="cart-footer">
+  <h3>your total : $ <span class="cart-total">0</span></h3>
+  <button class="clear-cart banner-btn">clear cart?</button><!--wrong place but on the page...deal with that later-->
+</div>
+</body>
+</html>
+
+
+
+
+<!-- ****first step, not certain what it does though all below here was stuff I had written out from another of the videos-->
+ <!-- <input type = "button" id = "btn-1" onclick = "item1Add()" value="Add to your bag?" class="btn"> 
+    ^^^^this did work on the other version(ifievergethistowork) </button>  --> 
+
+    <!-- <form method="dialog">
+        <form id="menuList"> -->
+           
+          <!-- </form>
+          this makes the input area with the number of items to choose
     <ul class="CartItems">
         <h3>Your Bag</h3>
         <li id = "item1Add"><b>The <i>BIG</i> Salad</b><br><select name="item1Add" onchange="update_prices(this);" class="form-select" id="item1" ><option value="0" selected="selected">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></li>
             <div class="item1Total"><div class="form-item" id="entry-total-wrapper">
-            <input type="text" maxlength="30" name="entry_ss3_total" id="entry-total" size="25" value="$ 10.00" class="form-text">
-    </ul>
-</body>
-</html>
+            <input type="text" maxlength="30" name="entry_ss3_total" id="entry-total" size="25" value="$10.00" class="form-text">
+    </ul> --> 
+    <!-- this is sitting off to the side in the wrong place -->
+    <!-- <div id ="cart-info" class="nav-info"><p>cart-info
+      <span class="cart-info_icon">cart-info-icon...</span> -->
+      <!-- <p class="text-capitalize"><span id ="item-count">2</span>items- $<span class="item-total">item-total</span></p><div class="cart-item d-flex justify-content-between text-capitalize my-3"> -->
+
+          <!-- <img src="brownbag.jpg" id="brownbag" alt=""></p>
+          </div>
+          <div class="cart-item-text">
+            <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+           <span>$</span>
+           <span id="cart-item-price" class="cart-item-price" class="mb-0">10.99</span>
+         </div>
+         <a href="#" id='cart-item-remove' class="cart-item-remove">
+           <i class="fas fa-trash"></i>
+         </a>
+       </div> 
+          <div class="item-text">
+          </div> -->
+          <!-- <div id= 'cart' class="cart">  -->
+              <!-- cart item -->
+              <!-- <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+                  <img src="brownbag.jpg" alt="brownbag" class="img-fluid rounded-circle" id="item-img" alt=""> -->
+      
+      
+                  <!--  -->
+                  
+                   <!-- cart buttons -->
+      
+                <!-- <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+                  <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+                  <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+                </div> -->
+                <!--end of  cart buttons -->
+              <!-- </div>
+          </div> -->
+          <!-- ******End of cart info***** -->
