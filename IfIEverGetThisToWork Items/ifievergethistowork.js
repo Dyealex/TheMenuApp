@@ -16,7 +16,7 @@ let item4 ={name:'Cheeseburger Combo', cost:9, ordered:0};
 // element.innerHTML="Added to Cart"//changes text in 
 // }
 function item1Add () {
-    // alert("Add to your bag?")//changes the text in the alert
+    alert("Add to your bag?")//changes the text in the alert
     document.getElementById('item1Add').innerHTML= "The BIG Salad" + " $10"
 }
 function item2Add () {

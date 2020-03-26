@@ -1,0 +1,27 @@
+<!-- This WORKS....do NOT mess with it. Only copy/paste to different file!!!! -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How many more times will I try this?</title>
+</head>
+<body>
+    <h1>JavaScript: Getting values from form fields for the absolute beginner.</h1>
+    Enter something here: <input type="text" id="foo" value=""><br>
+    Put something else here: <input type="text" id="zoo" value=""><br>
+    <button onclick="getValue()">Get something</button>
+    <p id ="boo"></p>
+
+    <script>
+        function getValue() {
+            var y = document.getElementById('boo');
+            var x = document.getElementById('foo').value;
+            var z = document.getElementById('zoo').value;
+            y.innerHTML= x + z;
+        }
+    </script>
+</body>
+</html>

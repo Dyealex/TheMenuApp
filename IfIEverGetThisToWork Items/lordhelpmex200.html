@@ -1,0 +1,52 @@
+<!-- copy/paste from lordhelpmex2 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How many more times will I try this?</title>
+</head>
+<body>
+    <h1>JavaScript: Getting values from form fields for the absolute beginner.</h1>
+    <b>The <i>BIG</i> Salad</b><br><span id = "itemOne">Price: $10</span><br>
+    <p id = "item1">Our BIG salad is a truly big salad with a little price. A huge bed of baby spinach, cherry tomatoes, shredded cheese, diced ham, fried onions, egg crumbles....whatever else we can dig up. These salads are made up weeks in advance so <b>NO special requests!</b></p>
+    <img src="saladphoto.jpg" id = "photosAll" alt="salad"><h5>Just so you know, your salad will look nothing like this!</h5>
+    <button onclick="getValue()">The BIG Salad $10</button>
+    $ <input type="number" id="zoo" value="10" min="10" max="10" value="10"><br>
+    How Many: <input type="number" id="foo" value="" min="0" max="20"><br><!-- foo--number requested -->
+    <hr>
+<div id ="item2"><b>The <i>SMALL</i> Salad</b><br><span>$9</span>
+<p>The small salad. A smaller version of our big salad...duh! Use your imagination.<br>
+</p><br><img src="smallsalad.jpg" id = "photosAll" alt="salad">
+<button onclick="getValue()">The Small Salad $9</button>
+    How Many: <input type="number" id="poo" value="" min="0" max="20"><br><!-- poo--number requested -->
+    $ <input type="number" id="soo" value="9" min="9" max="9" value="hidden"><br><!-- soo--times $9 -->
+</div>  
+<hr>
+
+
+    <!-- How Many: <input type="number" id="foo" value="" min="0" max="20"><br> -->
+    <!-- foo--number requested -->
+ 
+    <!-- <button onclick="getValue()">The BIG Salad $10</button><br> -->
+    <h2>Your Cart</h2>
+    <h2 id = "boo"></h2>
+    <script>
+      function getValue() {
+      // var y = document.getElementById('boo');
+      var p = document.getElementById('poo').value;//number of small salads
+      var s = document.getElementById('soo').value;//small salad $9
+            
+      var x = document.getElementById('foo').value;//number of big salads
+      var z = document.getElementById('zoo').value;//big salad $10
+
+      var y = document.getElementById('boo');//this is where the total goes.
+      y.innerHTML='$' +x * z; 
+    //   y.innerHTML;'$' +p * s;
+        }
+        // y = the paragraph, x = the number ordered, z = times $10
+    </script>
+</body>
+</html>
