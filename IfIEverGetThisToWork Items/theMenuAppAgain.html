@@ -1,0 +1,57 @@
+<!-- Trying to follow a video but keep getting confused because I am naming my items something different and I want different things to happen. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Menu App Again</title>
+<script src="theMenuAppAgain.js"></script>
+</head>
+<body>
+    
+<div class = "allMenuItemsOrdered">
+        
+    <div class="theBigSalad">
+   
+<span class="itemTitle"><b>The <i>BIG </i>Salad </span><span class="itemPrice1">$10</span>
+    
+        <p id = "item1">Our BIG salad is a truly big salad with a little price. A huge bed of baby spinach, cherry tomatoes, shredded cheese, diced ham, fried onions, egg crumbles....whatever else we can dig up. These salads are made up weeks in advance so <b>NO special requests!</b></p>
+   
+            <img src="saladphoto.jpg" id = "photosAll" alt="salad">
+            <h5>Just so you know, your salad will look nothing like this!</h5> 
+
+<span class="add-this-menu-item" id ='theBigSalad'>The BIG Salad $10</span>
+    <!-- <input type="number" id="bigSaladPrice" value="10" min="10" max="10" value="10">  -->
+    <!--- this will likely not work in the format I am following - -->
+<br>
+        How Many: <input id="bigSaladOrdered" type="number" value="" min="0" max="20"><br>
+   
+        <button id = "addBigSalad">Add to your Cart</button>
+    
+       
+</div> 
+<!-- The cart div -->
+
+<div class="cartRowTotal">
+    
+    <strong class="cart-total-title">Total</strong><br>
+    <div class="quantityElement">Quantity</div>
+    <div class="cart-total-price">$39.97<button class="btn buttonDanger" type="button">Remove</button></div> <!--- I think this should be the target-->
+    <!-- the above line is a span class. I am going to change it from a span to a div to see what happens. the getelementbyclassname may only work on divs??? -->
+
+</div><!--- closing tag for cartRowTotal --->
+
+    </div> <!--- closing tag for allCartItems --->
+
+<div class="placeOrder">
+
+    <button class=" btn primaryPurchaseButton">Place your Order</button>
+
+</div>
+    
+
+
+</body>
+</html>
+
+<!-- the big salad button needs to be where it can multiply the number of salads ordered by $10 and that total needs to be added to the cart. This should update the main cart. The remove button needs to be connected to remove individual items from the cart and update the cart total after an item is removed. Should it be where an item quantity can be changed? Yes it should but I may not be able to do this. Goal is to get this working and then move on to another item. Divide and concur! -->

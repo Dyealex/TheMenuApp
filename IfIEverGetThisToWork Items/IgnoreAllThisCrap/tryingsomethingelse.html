@@ -1,0 +1,59 @@
+<!-- Does not work and needs a lot of styling. I found another thing I want to try to see if I can get it to work -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu App</title>
+
+
+<!-- <link rel="stylesheet" href="tryingsomethingelse.css"> -->
+<link rel="stylesheet" href="morejohnsmilgacss.css">
+</head>
+
+<body>
+  <h2>Does not work. Needs lots of styling</h2>
+<!-- <script src="morejohnsmilgajson.json"></script> -->
+    <script src="tryingsomethingelse.js"></script>
+
+<!-- product section -->
+<section class="products">
+  <!-- ^^^parent element??? -->
+  <div class="section-title">
+    <!-- 1st child???? -->
+    <h2>Our Menu</h2>
+    <div id = "item1-div">
+      <!-- child of child???? -->
+      <b>The <i>BIG</i> Salad</b><br>
+      <input id = "multiQuan" type = "number">$10</input><br>
+      <p id = "item1">Our BIG salad is a truly big salad with a little price. A huge bed of baby spinach, cherry tomatoes, shredded cheese, diced ham, fried onions, egg crumbles....whatever else we can dig up. These salads are made up weeks in advance so <b>NO special requests!</b></p>
+      <h5>(Just so you know, your salad will look nothing like this!)</h5>
+      
+      <button class="bag-btn" onclick = "item1Add()"> Add to Your Bag?<img src="cartimage.png" id = "add-item"></button> 
+      <img src="saladphoto.jpg" id = "photosAll" alt="salad"><br>
+  </div>
+  <hr>
+<!-- <div id ="item2"><b>The <i>SMALL</i> Salad</b><br><span>$9</span>
+<p>The small salad. A smaller version of our big salad...duh! Use your imagination.<br>
+</p> 
+<button class="bag-btn" onclick = "item2Add()">Add to Your Bag?
+  <img src="cartimage.png" id = "add-item"></button>
+<img src="smallsalad.jpg" id = "photosAll" alt="salad"><br> 
+  </div> -->
+</section>
+  </div> 
+  <ul class="CartItems">
+    <h3>Your Bag</h3>
+    <li id = "item1Add">Item One</li>
+    <li id = "item2Add">Item Two</li>
+  </ul> 
+<!-- end of cart -->
+<div class="cart-footer">
+  <h3 id = "addItem">Your bag is empty. $0</h3>
+  <button id ="clear-cart" onclick="removeAll()">Empty Your bag?</button><!--wrong place but on the page...deal with that later-->
+</div>
+</body>
+</html>
+
+

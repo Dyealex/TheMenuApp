@@ -1,0 +1,107 @@
+/* file name morejohnsmilgacss.css */
+
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 10px;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Lato", sans-serif;
+}
+/* #photosAll:hover {
+  transform: scale(1.2);
+  overflow: visible;
+} */
+#item1 {
+ width: 700px;
+}
+.bag-btn {
+  float: left;
+  position: relative;
+  top: 60%;
+  width: 75px;
+  height: 75px;
+  /* right: 0; */
+  /* background: var(--primaryColor); */
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  /* letter-spacing: var(--mainSpacing); */
+  font-weight: bold;
+  transition: var(--mainTransition);
+  /* transform: translateX(101%); */
+  cursor: pointer;
+  margin-left: 30px;
+}
+.bag-btn:hover {
+  border: 2px solid grey;
+  background-color: rgb(94, 139, 94);
+ transform: scale(1.5);
+ opacity: .8;
+ border-radius: 50%;
+}
+
+
+.products {
+  padding: 4rem 0;
+}
+.section-title h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  /* margin-left: 10px; */
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+
+
+.cart-item h5 {
+  margin: 0.5rem 0;
+  letter-spacing: var(--mainSpacing);
+}
+.item-amount {
+  text-align: center;
+}
+.remove-item {
+  color: grey;
+  cursor: pointer;
+} */
+
+.cart-footer {
+  margin-top: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+.cart-footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+#clear-cart {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background-color: rgb(226, 135, 226);
+  color: var(--mainBlack);
+  border: 1px solid gray;
+  /* transition: var(--mainTransition); */
+  cursor: pointer;
+}
+#clear-cart:hover {
+  background-color: lightslategrey;
+  transform: scale(1.2);
+}
+/* --------------- End of Cart ---------------- */

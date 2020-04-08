@@ -1,0 +1,53 @@
+<!-- onemorelastchance.html **  the menu app try 1024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Menu App Attempt 1024</title>
+    <link rel="stylesheet" href="onemorelastchance.css">
+    <script src="onemorelastchance.js" async></script>    
+</head>
+<body>
+
+    <div class = "allCartItems">
+        <div class="theBigSalad">
+    <span class="itemTitle"><b>The <i>BIG </i>Salad </span><span class="itemPrice">$10</span>
+    
+        <p id = "item1">Our BIG salad is a truly big salad with a little price. A huge bed of baby spinach, cherry tomatoes, shredded cheese, diced ham, fried onions, egg crumbles....whatever else we can dig up. These salads are made up weeks in advance so <b>NO special requests!</b></p>
+   
+    <img src="saladphoto.jpg" id = "photosAll" alt="salad">
+    <h5>Just so you know, your salad will look nothing like this!</h5> 
+</div>
+
+<!-- this is the section for the quantity ordered -->
+    
+    <div class="cart-items-total">
+        <div class="howMany"> 
+            <button class="add-this-menu-item" id = 'theBigSalad'>The BIG Salad $10</button><input type="number" id="bigSaladPrice" value="10" min="10" max="10" value="10"> <!--- this will likely not work in the format I am following - -->
+           <br>
+           How Many: <input type="number" id="bigSaladOrdered" value="" min="0" max="20"><br>
+<p class="items-in-cart">Your Cart</p>
+    <input class ="removeItem" id = remBigSalad type="number" value="2"><button class="btn removeButton" type="button">Remove</button> <!---This removes everthing on the page but the big salad h? at the top. ****now it is fixed and removes the remove button-->
+</div> <!--- closing tag for cart-items-total --->
+
+<!-- end of the section for quantity ordered -->
+
+ <!-- This is the part where the cart total is -->   
+<div class="cartRowTotal">
+    <strong class="cart-total-title">Total</strong>
+
+    <span class="cart-total-price">$39.97</span> <!--- I think this should be the target-->
+        </div><!--- closing tag for cartRowTotal --->
+        </div> <!--- closing tag for allCartItems --->
+<div class="placeOrder">
+    <button class=" btn primaryPurchaseButton">Place your Order</button>
+
+</div>
+    
+<hr>
+
+</body>
+</html>
+
+<!-- <b>The <i>BIG</i> Salad</b><br><span id = "itemOne">Price: $10</span><br> -->

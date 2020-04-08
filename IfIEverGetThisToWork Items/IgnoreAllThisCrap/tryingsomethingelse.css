@@ -1,0 +1,41 @@
+/* Cart styling */
+.cart {
+    position: absolute;
+    min-height: 10rem;
+    background: var(--mainWhite);
+    top: 20px;
+    right: 100px;
+    /* transition: all 0.3s ease-in-out; */
+    width:200px;
+    overflow: hidden;
+}
+.show-cart {
+    width: 18rem;
+    padding: 2rem 1.5rem;
+    /* transform: rotateY(-360deg); */
+}
+.cart-item {
+    /* transition: all 2s ease-in-out; */
+}
+/* end of cart??? */
+
+/* Cart item */
+.clear-cart {
+    color: purple;
+    /* transition: all 1s ease-in-out; */
+}
+.clear-cart:hover {
+    color: white;
+    transform: scale(1.5);
+   background-color: darkmagenta;
+}
+/* ^^^works^^^^ */
+#brownbag:hover {
+    transform: scale(1.5);
+    overflow: visible;
+}
+.fas {
+    width: 5px;
+    height: 5px;
+    border: 5px solid grey;
+}/*this is suppose to be the chevron thing but will not work did this to show it on the page.*/
