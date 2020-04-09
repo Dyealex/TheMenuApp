@@ -1,5 +1,5 @@
 <!-- copy/paste from lordhelpmex2 -->
-<!-- lordhelpmex200.html*** this will update the price of the big salad but will no longer work for the small salad. -->
+<!-- lordhelpmex200.html*** this will update the price of the big salad but will no longer work for the small salad. Back logging both but combining instead of adding the two together. I just found a simple video that adds two numbers together. Can I get enough information to figure this out or not...I think it is because it is treating the numbers as strings instead of numbers.-->
 
 
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
     <title>How many more times will I try this?</title>
 </head>
 <body>
-    <h3>This will also log the big salad and update the total but not the small salad</h3><br>
+    <h3>"lordhelpmex200.html" Using internal JS, no seperate file. <br>This will also log the big salad and update the total but not the small salad</h3><br>
     <b>The <i>BIG</i> Salad</b><br><span id = "itemOne">Price: $10</span><br>
     <p id = "item1">Our BIG salad is a truly big salad with a little price. A huge bed of baby spinach, cherry tomatoes, shredded cheese, diced ham, fried onions, egg crumbles....whatever else we can dig up. These salads are made up weeks in advance so <b>NO special requests!</b></p>
     <img src="saladphoto.jpg" id = "photosAll" alt="salad"><h5>Just so you know, your salad will look nothing like this!</h5>
@@ -36,7 +36,7 @@
     <h2 id = "boo"></h2>
     <script>
       function getValue() {
-      // var y = document.getElementById('boo');
+      var y = document.getElementById('boo');
       var p = document.getElementById('poo').value;//number of small salads
       var s = document.getElementById('soo').value;//small salad $9
             
@@ -44,8 +44,8 @@
       var z = document.getElementById('zoo').value;//big salad $10
 
       var y = document.getElementById('boo');//this is where the total goes.
-      y.innerHTML='$' +x * z; 
-    //   y.innerHTML;'$' +p * s;
+      y.innerHTML='$' + (x * z) + (p * s); 
+    //   y.innerHTML='$' +p * s;
         }
         // y = the paragraph, x = the number ordered, z = times $10
     </script>

@@ -1,0 +1,62 @@
+<!-- I am going to try to get all the parts of working files into one file and possibly get them to all talk to each other. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Menu App Final (I hope!!!)</title>
+</head>
+<body>
+   <script src = 'theFinalAnswer.js'></script>
+    
+   <form id="menuList">
+    <div id = "item1-div">
+        <b>The <i>BIG</i> Salad</b><br><span>Price: $10</span><br>
+        <p id = "item1">Our BIG salad is a truly big salad with a little price. A huge bed of baby spinach, cherry tomatoes, shredded cheese, diced ham, fried onions, egg crumbles....whatever else we can dig up. These salads are made up weeks in advance so <b>NO special requests!</b></p>
+        <img src="saladphoto.jpg" id = "photosAll" alt="salad"><h5>Just so you know, your salad will look nothing like this!</h5>
+<br>
+<input type = "button" id = "btn-1" onclick = "item1Add()" value="Add the BIG Salad to your bag?" class="btn">  <!---this is what changes the line of the cart-->
+
+How Many: <input type="number" id="quantity" value="" min="0" max="20"><br>  <!---this is somehow connected to the "getValue()" button below...-->
+
+<!-- ** foo--number requested ** -->
+
+$ <input type="number" id="zoo" value="10" min="10" max="10"><br>
+<!-- ** zoo--times $10 ** I wonder if this is why it will not stay on the screen -->
+
+<button onclick="getValue()">The BIG Salad $10</button><br>
+<!-- this button and the how many button seem to be connected but the amount does not stay. If I can get the add to your bag button connected to the how many button, it may actually work -->
+
+<h2>Your Cart</h2>
+
+<!-- <h2 id = "boo"></h2> -->
+
+<!-- **<input type = "button" id = "btn-1" onclick = "item1Add()" value="Add this to your bag?" class="btn">
+How Many: <input type="number" id="foo" value="" min="0" max="20"><br>foo--number requested -->
+<!-- $ <input type="number" id="zoo" value="10" min="10" max="10" value="hidden"> -->
+<!-- <br> -->
+<!-- zoo--times $10 -->
+<!-- *** ^^^copy/paste from ifievergethistowork.html ****-->
+<hr>
+
+<!-- ** copy/pasted from ifievergethistowork.html ** -->
+<hr>
+
+<h3>Your Bag</h3>
+
+<p id = "item1Add"></p> <!--This what changes when you click the "item1Add()"-->
+
+<p id = "cartSumTotal">$</p>  <!--the total from the input shows here but goes away.-->
+
+<p id = "item2Add"></p>
+
+<p id = "item3Add"></p>
+
+<p id = "item4Add"></p>
+
+<h5>once the button is clicked the item appears here.</h5>
+<!-- *** Something works but I am not sure what is happening. I can see the price total briefly but it goes away and but it does at least show up. -->
+
+</body>
+</html>
